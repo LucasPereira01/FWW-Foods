@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-.git/hooks/commit-msg $1
+# Invoca o script do Husky com o arquivo de mensagem de commit como argumento
+npx --no-install husky run commit-msg $1
